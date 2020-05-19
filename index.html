@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Niraj Kafle</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width= device-width, initial-scale= 1">
-	<title>Niraj Kafle</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 	<link rel="icon" href="Images/fav.jpg">
+
+	<!-- JS Script -->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </head>
 <body>
-	<div class="header">
-		<header></header>
-	</div>
+	
+
 	<div class="top-container">
+
+		<!-- Nav Bar -->
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav_bar">
+			<a class="navbar-brand" href="">My Portfolio</a>
+			<button id="ham_bar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#intro">Intro</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skill">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#service">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#project">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
 		<img class="top-cloud" src="Images/cloud.png" alt="cloud-img">
 		<h1  style="font-family: 'Balsamiq Sans', cursive;">I'm Niraj Kafle</h1>
 		<h3 class="sub-head">Student and Web developer</h3>
@@ -20,13 +56,13 @@
 		<img class="background-img" src="Images/bg.png" alt="mountain-img">
 	</div>
 	<div class="middle-container">
-		<div class="profile">
+		<div class="profile"  id="intro">
 			<img class="profile-img" src="Images/profile_pic.jpg" alt="profile-pic">
 			<h2>Hello!</h2>
 			<p>It's me Niraj, I am a student living in Kirtipur, Kathmandu. I love developing websites and android apps. I usually love spending my time using the internet.</p>
 		</div>
 		<hr size="2">
-		<div class="skills">
+		<div class="skills" id="skill">
 			<h2>My Skills.</h2>
 			<div class="skill-row">
 				<img class="skill-img img-1" src="Images/html.png" alt="html">
@@ -58,12 +94,95 @@
 				<h3>Video Editing</h3>
 				<p>The final skill I have is video editing, and no doubt I can perfectly handle any kind of videos you throw at me. Nowadys video editing is one of the most common skill that one need to have as it maight me useful in most of the cases.</p>
 			</div>
+			<hr size="2">
+
+			<h2 id="service">My Services</h2>
+			<div class="services">
+				<div class="services_list" >
+					<h3>Web development:</h3>
+					<ul class="web_list">
+						<li>Classified Ads Listing website</li>
+						<li>Multi Vendor E-commerce website</li>
+						<li>Single Store E-commerce website</li>
+						<li>Real state/ Hotel website</li>
+						<li>Classified Ads Listing website</li>
+						<li>Normal Static Website </li>
+						<li>News Portal Website</li>
+						<li>Online Course, LMS Website</li>
+						<li>Freelancing and Microjob marketplace website</li>
+						<li>Job Listing Website</li>
+						<li>Matrimonail and Dating Website</li>
+						<li>Service finder- Provider and Business listing website</li>
+						<li>Croudfunding, fundraising and Charity Donation</li>
+						<li>Social Networking & Community Website</li>
+						<li>Membership & Community Website</li>
+						<li>Podcast, Audio and music downloading Website</li>
+						<li>Appointment booking website</li>
+						<li>School Management Website</li>
+						<li>Tours & TRavel Website</li>
+						<li>Car rental Website</li>
+					</ul>
+				</div>
+				<div class="services_list">
+					<h3>App Development</h3>
+					<ul class="app_list">
+						<li>Any kind of custom website</li>
+						<li>All kinds of web apps</li>
+					</ul>
+				</div>
+				<div class="services_list">
+					<h3>Other Services</h3>
+					<ul class="other_list">
+						<li>2d explainer videos</li>
+						<li>Motion graphics videos</li>
+						<li>Whiteboard animation</li>
+						<li>Logo Designing</li>
+						<li>Video Editing (Any type)</li>
+						<li>Bannner Designing</li>
+					</ul>
+				</div>
+				<div>
+					<button class="fiverr"> <a href="https://www.fiverr.com/nirajkafle0"></a> See my fiverr gigs</button>
+				</div>
+			</div>
+			<hr size="2">
+			<h2 class="projects_header" id="project"> Some Projects</h2>
+			<h3>Websites</h3>
+			<div class="row">
+				<figure class="col-md-6">
+					<img src="Images/proj1.png" class="proj" alt="Project 1">
+					<figcaption>Educational Website( Expert For Ag) <br><a href="https://expertforag.com">Visit</a></figcaption>
+				</figure>
+				<figure class="col-md-6">
+					<img src="Images/proj_2.png" class="proj" alt="Project 2">
+					<figcaption>News Website( Sayapatri Online TV) <br><a href="https://sayapatrionlinetv.com">Visit</a></figcaption>
+				</figure>
+				<figure class="col-md-6">
+					<img src="Images/proj_3.png" class="proj" alt="Project 3">
+					<figcaption>Plantation Website( Team Trees 10) <br><a href="https://teamtree10.ml">Visit</a></figcaption>
+				</figure>
+				<figure class="col-md-6">
+					<img src="Images/proj_4.png" class="proj" alt="Project 4">
+					<figcaption>My Portfolio( Niraj Kafle) <br><a href="https://kafle1.github.io/portfolio/">Visit</a></figcaption>
+				</figure>		
+			</div>
+			<h3> Some Apps</h3>
+			<div class="row">
+			<figure class="col-md-6">
+					<img src="Images/app_proj.png" class="proj" alt="Project 5">
+					<figcaption>Helper App( SEE Aid) <br><a href="https://play.google.com/store/apps/details?id=com.anp.seeaid">Download</a></figcaption>
+				</figure>
+				<figure class="col-md-6">
+					<img src="Images/app_proj_2.png" class="proj" alt="Project 6">
+					<figcaption>Earning App(Addy Cash) <br><a href="https://play.google.com/store/apps/details?id=com.kafleniraj.wrnpfinal">Download</a></figcaption>
+				</figure>
+			</div>	
 		</div>
 		<hr size="2">
-		<div class="contact-me">
+		<div class="contact-me" id="contact">
 			<h2>Get In Touch</h2>
 			<h3>Need more details, contact me now</h3>
-			<p>I am always there to help others who want mine help. If you wanna make your own website, any other digi products or wanna know more then feel free to get in touch with me.</p>
+			<p>I am always there to help others who wants my help. If you want to make any kinds of website, android apps, logos and banners for your website contact me! kafleniraj@gmail.com, +9779861595869</p>
 			<button><a class="btn" href="mailto:kafleniraj@gmail.com"><b>CONTACT ME</b></a></button>
 		</div>
 	</div>

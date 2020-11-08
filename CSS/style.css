@@ -116,7 +116,7 @@ button {
   color: white;
 }
 button:hover {
-  background-color: #660066;
+  background-color: #66bfbf;
   cursor: pointer;
   color: white;
 }
@@ -196,7 +196,7 @@ button:hover {
   width: 100%;
 }
 .proj {
-  height: 450px;
+  height: 300px;
   width: 100%;
   margin: 5px;
 }
@@ -209,4 +209,7 @@ button:hover {
 }
 .fiverr {
   color: white;
+}
+.apps {
+  width: 450px;
 }
